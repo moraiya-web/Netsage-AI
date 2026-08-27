@@ -1,0 +1,53 @@
+NetSage AI - Rule Checker sample run over cases.csv
+Cases loaded: 30
+==============================================================================
+[C01] VLAN - 1 flag(s)
+    - vlan_config: Access-VLAN mismatch: port set to VLAN 1, expected VLAN 10
+[C02] VLAN - 1 flag(s)
+    - vlan_config: Trunk pruning: VLAN 10 missing from allowed-VLAN list
+[C03] VLAN - 1 flag(s)
+    - interface_down: Down/disassociated state detected in show output
+[C04] VLAN - 1 flag(s)
+    - vlan_config: Native VLAN mismatch across trunk
+[C05] Gateway - 1 flag(s)
+    - gateway_mismatch: Gateway mismatch: PC points to 192.168.10.254, router interface is actually 192.168.10.1
+[C06] Gateway - 1 flag(s)
+    - interface_down: Down/disassociated state detected in show output
+[C07] Gateway - 1 flag(s)
+    - duplicate_ip: Duplicate IP detected on 192.168.30.1
+[C08] Gateway - no deterministic rule fired (needs AI + human review)
+[C09] DHCP - no deterministic rule fired (needs AI + human review)
+[C10] DHCP - no deterministic rule fired (needs AI + human review)
+[C11] DHCP - no deterministic rule fired (needs AI + human review)
+[C12] DHCP - no deterministic rule fired (needs AI + human review)
+[C13] DNS - no deterministic rule fired (needs AI + human review)
+[C14] DNS - no deterministic rule fired (needs AI + human review)
+[C15] DNS - no deterministic rule fired (needs AI + human review)
+[C16] DNS - no deterministic rule fired (needs AI + human review)
+[C17] Routing - 1 flag(s)
+    - missing_route: Expected route to 10.10.20.0/24 not found in routing table
+[C18] Routing - no deterministic rule fired (needs AI + human review)
+[C19] Routing - 1 flag(s)
+    - wrong_mask: Mismatched subnet masks found: 255.255.255.0, 255.255.255.192
+[C20] Routing - 1 flag(s)
+    - missing_route: Route lookup failed - network not in routing table
+[C21] ACL - no deterministic rule fired (needs AI + human review)
+[C22] ACL - no deterministic rule fired (needs AI + human review)
+[C23] ACL - no deterministic rule fired (needs AI + human review)
+[C24] ACL - no deterministic rule fired (needs AI + human review)
+[C25] NAT - no deterministic rule fired (needs AI + human review)
+[C26] NAT - no deterministic rule fired (needs AI + human review)
+[C27] NAT - no deterministic rule fired (needs AI + human review)
+[C28] Wireless - no deterministic rule fired (needs AI + human review)
+[C29] Wireless - 1 flag(s)
+    - interface_down: Down/disassociated state detected in show output
+[C30] Wireless - 1 flag(s)
+    - interface_down: Down/disassociated state detected in show output
+==============================================================================
+Cases with at least one deterministic flag: 12/30
+Total individual flags raised: 12
+
+Note: cases with no flag are NOT 'no problem' - it means this rule-based
+checker's 6 patterns don't cover that fault type (e.g. FHRP/HSRP state,
+RADIUS auth failures, DNS record content). Those rely on the AI diagnosis
++ human review step instead. See README for the full list of known gaps.
