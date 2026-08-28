@@ -174,6 +174,16 @@ Network Troubleshooting Case
             v
          Dashboard
 ```
+## Deployment
+
+NetSage AI is deployed as a Streamlit web application using Render.
+
+**Live Web Application:**  
+(https://netsage-ai-samarth.onrender.com)
+
+**Deployment Platform:** Render  
+**Application Framework:** Streamlit
+
 ## Run on Windows
 1. Install Python 3.10+.
 2. Open this folder in CMD/PowerShell.
