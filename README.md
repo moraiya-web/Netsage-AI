@@ -141,7 +141,7 @@ The dashboard helps visualize the overall performance and behavior of the troubl
 
 The overall workflow of NetSage AI is:
 
-
+```text
 Network Troubleshooting Case
             |
             v
