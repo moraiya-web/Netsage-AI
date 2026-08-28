@@ -184,5 +184,3 @@ Network Troubleshooting Case
 5. Open the localhost URL shown by Streamlit (normally http://localhost:8501).
 
 You can also double-click `run.bat`.
-
-You can also double-click `run.bat`.
