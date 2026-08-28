@@ -140,7 +140,6 @@ The dashboard helps visualize the overall performance and behavior of the troubl
 ## System Workflow
 
 The overall workflow of NetSage AI is:
-
 ```text
 Network Troubleshooting Case
             |
@@ -174,7 +173,7 @@ Network Troubleshooting Case
             |
             v
          Dashboard
-
+```
 ## Run on Windows
 1. Install Python 3.10+.
 2. Open this folder in CMD/PowerShell.
@@ -183,5 +182,7 @@ Network Troubleshooting Case
 4. Run:
    `python -m streamlit run app.py`
 5. Open the localhost URL shown by Streamlit (normally http://localhost:8501).
+
+You can also double-click `run.bat`.
 
 You can also double-click `run.bat`.
